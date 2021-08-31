@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/nutritionName"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="13sp"
+            android:textColor="@color/text_color"
+            android:padding="5dp"
+            android:background="@drawable/table_border"/>
+
+        <TextView
+            android:id="@+id/nutritionCategory"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="13sp"
+            android:textColor="@color/text_color"
+            android:padding="5dp"
+            android:background="@drawable/table_border"/>
+
+        <TextView
+            android:id="@+id/nutritionServing"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Serving"
+            android:textSize="13sp"
+            android:textColor="@color/text_color"
+            android:padding="5dp"
+            android:background="@drawable/table_border"/>
+
+        <TextView
+            android:id="@+id/nutritionCalo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Calo"
+            android:textSize="13sp"
+            android:textColor="@color/text_color"
+            android:padding="5dp"
+            android:background="@drawable/table_border"/>
+
+    </LinearLayout>
+
+</LinearLayout>

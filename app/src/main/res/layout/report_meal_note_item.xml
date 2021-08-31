@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_edge"
+    android:backgroundTint="@color/white"
+    android:padding="15dp"
+    android:layout_marginBottom="20dp">
+
+    <TextView
+        android:id="@+id/mealNoteTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Health recap on dd/mm/yyy"
+        android:textColor="@color/text_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/mealCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_fastfood_24"
+        android:drawableTint="@color/warning"
+        android:drawablePadding="5dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/text_color_2"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/caloriesCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_local_fire_department_24"
+        android:drawableTint="@color/danger"
+        android:textSize="20sp"
+        android:drawablePadding="5dp"
+        android:text=""
+        android:textColor="@color/text_color_2"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"/>
+
+
+</LinearLayout>

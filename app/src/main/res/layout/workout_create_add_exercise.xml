@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@color/light_grey">
+
+    <TextView
+        android:id="@+id/exerciseCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose exercise"
+        android:textColor="@color/text_color"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerExercise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Time (seconds)"
+        android:inputType="number"
+        android:textColorHint="@color/text_color_2"
+        android:textColor="@color/text_color_2"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/etRest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rest (seconds)"
+        android:inputType="number"
+        android:textColorHint="@color/text_color_2"
+        android:textColor="@color/text_color_2"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/addBtn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Add"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:background="@drawable/button_success"/>-->
+
+</LinearLayout>

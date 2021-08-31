@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create custom workout"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="20dp">
+            </TextView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/workoutName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Workout name"
+                    android:inputType="text"
+                    android:textColorHint="@color/text_color_2"
+                    android:textColor="@color/text_color_2"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <EditText
+                    android:id="@+id/totalSets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Total sets"
+                    android:inputType="number"
+                    android:textColorHint="@color/text_color_2"
+                    android:textColor="@color/text_color_2"
+                    android:background="@color/white"
+                    android:padding="10dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choose main muscle part"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    android:layout_marginTop="25dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerMainMuscle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/nextBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_success"
+                    android:text="Next"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

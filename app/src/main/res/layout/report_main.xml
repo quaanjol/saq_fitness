@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/light_grey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:background="@color/light_grey">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/abstract_bg"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/homeHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reports"
+                    android:textSize="30dp"
+                    android:textColor="@color/text_color"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginHorizontal="20dp"/>
+
+                <com.jama.carouselview.CarouselView
+                    android:id="@+id/carouselView"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:enableSnapping="true"
+                    app:scaleOnScroll="false"
+                    app:setAutoPlay="true"
+                    app:setAutoPlayDelay="3000"
+                    app:carouselOffset="center"
+                    app:indicatorAnimationType="drop"
+                    app:indicatorRadius="5"
+                    app:indicatorPadding="5"
+                    app:indicatorSelectedColor="@color/primary"
+                    app:indicatorUnselectedColor="@color/primary_hover"
+                    app:size="10"
+                    app:spacing="10"
+                    app:resource="@layout/activity_image_carousel"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_grey"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/servicesHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reports functions are for paid users only, please choose one of the services below to access to these functions."
+                    android:layout_marginHorizontal="20dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/text_color"
+                    android:layout_marginBottom="20dp"
+                    android:visibility="gone"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvServices"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/currentGoalText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Current goal"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_color"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/noGoalSection"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="There is currently no goal."
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color_2"
+                        android:layout_marginTop="10dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/createGoalBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:text="Create new goal"
+                    android:background="@drawable/button_primary"
+                    android:visibility="gone"
+                    android:layout_marginTop="15dp"/>
+
+                <LinearLayout
+                    android:id="@+id/currentGoalSection"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:backgroundTint="@color/white"
+                    android:background="@drawable/rounded_edge"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/goalName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Goal Name"
+                        android:textColor="@color/primary"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="10"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:id="@+id/goalResult"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:text="90% done"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_color"/>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="8"
+                            android:layout_height="20dp"
+                            android:background="@drawable/rounded_edge"
+                            android:backgroundTint="@color/secondary_hover"
+                            android:layout_gravity="center">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:weightSum="100"
+                                android:background="@drawable/rounded_edge"
+                                android:backgroundTint="@color/secondary_hover">
+
+                                <TextView
+                                    android:id="@+id/goalResultProgressBar"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="22"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/rounded_edge"
+                                    android:backgroundTint="@color/primary_hover"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/goalTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="10/08/2021 - 30/08/2021"
+                            android:textSize="13sp"
+                            android:textColor="@color/text_color_2"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/viewAllGoalBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:text="View all goals"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:background="@drawable/button_primary"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reportSection"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Meal notes"
+                    android:textSize="20sp"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="15dp"/>
+
+                <Button
+                    android:id="@+id/mealNoteCreateBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:text="Create new"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_primary"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvMealNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"/>
+
+                <Button
+                    android:id="@+id/loadMoreMealNoteBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:text="Load more"
+                    android:paddingVertical="10dp"
+                    android:background="@drawable/button_success"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/homeBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Home"
+            android:textSize="10sp"
+            android:textColor="@color/text_color_2"
+            android:drawableTint="@color/text_color_2"
+            android:drawableTop="@drawable/ic_baseline_home_24"
+            android:background="#fff" />
+
+        <Button
+            android:id="@+id/trainingBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Workout"
+            android:textSize="10sp"
+            android:textColor="@color/text_color_2"
+            android:drawableTint="@color/text_color_2"
+            android:drawableTop="@drawable/ic_baseline_play_arrow_24"
+            android:background="#fff" />
+
+        <Button
+            android:id="@+id/nutritionBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Nutrition"
+            android:textSize="10sp"
+            android:textColor="@color/text_color_2"
+            android:drawableTint="@color/text_color_2"
+            android:drawableTop="@drawable/ic_baseline_fastfood_24"
+            android:background="#fff" />
+
+        <Button
+            android:id="@+id/reportBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Reports"
+            android:textSize="10sp"
+            android:textColor="@color/logo_color"
+            android:drawableTint="@color/logo_color"
+            android:drawableTop="@drawable/ic_baseline_bar_chart_24"
+            android:background="#fff" />
+
+        <Button
+            android:id="@+id/meBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Me"
+            android:textSize="10sp"
+            android:textColor="@color/text_color_2"
+            android:drawableTint="@color/text_color_2"
+            android:drawableTop="@drawable/ic_baseline_account_circle_24"
+            android:background="#fff" />
+
+    </LinearLayout>
+</LinearLayout>

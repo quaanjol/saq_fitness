@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/mealNoteTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="30sp"
+                android:textColor="@color/text_color"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/intakeCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_fastfood_24"
+                android:drawableTint="@color/warning"
+                android:drawablePadding="5dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textColor="@color/text_color_2"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/burnedCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_local_fire_department_24"
+                android:drawableTint="@color/danger"
+                android:textSize="20sp"
+                android:drawablePadding="5dp"
+                android:text=""
+                android:textColor="@color/text_color_2"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp"/>
+
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="20dp">-->
+
+<!--                <com.github.mikephil.charting.charts.BarChart-->
+<!--                    android:id="@+id/caloChart"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent" />-->
+
+<!--            </RelativeLayout>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:text="Information"
+                android:textSize="22sp"
+                android:textColor="@color/text_color_2"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:textSize="20sp"
+                android:text=""
+                android:lineHeight="35dp"
+                android:textColor="@color/text_color_2"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your note description"
+                android:textSize="22sp"
+                android:textColor="@color/text_color_2"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/noteDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:lineHeight="35dp"
+                android:textSize="20sp"
+                android:textColor="@color/text_color_2"
+                android:gravity="center_vertical"
+                android:textAllCaps="true"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

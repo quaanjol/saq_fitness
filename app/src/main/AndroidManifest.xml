@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kwan.saq">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SAQ">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".ExerciseDetailActivity"></activity>
+        <activity android:name=".WorkoutMainActivity"></activity>
+        <activity android:name=".WorkoutDetailActivity"></activity>
+        <activity android:name=".WorkoutDoActivity"></activity>
+        <activity android:name=".WorkoutCommentsActivity"></activity>
+        <activity android:name=".WorkoutCreateActivity"></activity>
+        <activity android:name=".WorkoutCreateAddExerciseActivity"></activity>
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".ReportMainActivity"></activity>
+        <activity android:name=".ReportServiceDetailActivity"></activity>
+        <activity android:name=".ReportServicePaymentActivity"></activity>
+        <activity android:name=".ReportCreateMealNote"></activity>
+        <activity android:name=".ReportAddMeal"></activity>
+        <activity android:name=".ReportMealNoteDetailActivity"></activity>
+        <activity android:name=".ReportCreateGoal"></activity>
+        <activity android:name=".ReportGoalDetail"></activity>
+        <activity android:name=".ReportAllGoals"></activity>
+        <activity android:name=".NutritionMainActivity"></activity>
+    </application>
+
+</manifest>

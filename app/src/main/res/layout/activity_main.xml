@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:weightSum="2"
+    android:background="#fff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/logo"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:paddingVertical="@dimen/cardview_default_elevation"
+            android:id="@+id/ivCover"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get to be the best version of yourself"
+            android:textSize="20sp"
+            style="bold"
+            android:id="@+id/tvTitle"
+            android:gravity="center"
+            android:textColor="@color/text_color" />
+
+        <Button
+            android:id="@+id/startedBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Get Started"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_clicked"
+            android:padding="15dp"
+            android:bottomRightRadius="10dp"
+            android:bottomLeftRadius="10dp"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

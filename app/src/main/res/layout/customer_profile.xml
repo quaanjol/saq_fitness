@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="12">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="15dp"
+                    android:layout_centerVertical="true"/>
+
+                <Button
+                    android:id="@+id/logoutBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log out"
+                    android:textColor="@color/text_color"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_alignParentRight="true"/>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/customerAvatar"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/popular_banner"
+                    android:background="@drawable/avatar_circle"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="15dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/customerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vu Van San"
+                        android:textSize="20sp"
+                        android:textColor="@color/dark"/>
+
+                    <TextView
+                        android:id="@+id/customerTdee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="@color/danger"
+                        android:drawableLeft="@drawable/ic_baseline_local_fire_department_24"
+                        android:textColor="@color/text_color_2"
+                        android:text=" TDEE: 2209 Kcal"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/customerWeightHeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="@color/primary"
+                        android:drawableLeft="@drawable/ic_round_supervised_user_circle_24"
+                        android:textColor="@color/text_color_2"
+                        android:text=" 69 Kg - 167 cm"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/customerFeedCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="@color/success"
+                        android:drawableLeft="@drawable/ic_baseline_sports_basketball_24"
+                        android:textColor="@color/text_color_2"
+                        android:text=" 0 activities"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/customerPaymentStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="@color/warning"
+                        android:drawableLeft="@drawable/ic_baseline_payments_24"
+                        android:textColor="@color/text_color_2"
+                        android:text=" 0 activities"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/dark_hover"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Activities"
+                    android:textSize="20sp"
+                    android:textColor="@color/text_color"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvFeeds"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"/>
+
+                <Button
+                    android:id="@+id/loadMoreBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingVertical="8dp"
+                    android:text="Load more activities"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_warning"
+                    android:layout_marginTop="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/homeBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Home"
+            android:textSize="10sp"
+            android:textColor="@color/text_color_2"
+            android:drawableTint="@color/text_color_2"
+            android:drawableTop="@drawable/ic_baseline_home_24"
+            android:background="#fff" />
+
+        <Button
+            android:id="@+id/trainingBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Workout"
+            android:textSize="10sp"
+            android:textColor="@color/text_color_2"
+            android:drawableTint="@color/text_color_2"
+            android:drawableTop="@drawable/ic_baseline_play_arrow_24"
+            android:background="#fff" />
+
+        <Button
+            android:id="@+id/nutritionBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Nutrition"
+            android:textSize="10sp"
+            android:textColor="@color/text_color_2"
+            android:drawableTint="@color/text_color_2"
+            android:drawableTop="@drawable/ic_baseline_fastfood_24"
+            android:background="#fff" />
+
+        <Button
+            android:id="@+id/reportBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Reports"
+            android:textSize="10sp"
+            android:textColor="@color/text_color_2"
+            android:drawableTint="@color/text_color_2"
+            android:drawableTop="@drawable/ic_baseline_bar_chart_24"
+            android:background="#fff" />
+
+        <Button
+            android:id="@+id/meBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Me"
+            android:textSize="10sp"
+            android:textColor="@color/logo_color"
+            android:drawableTint="@color/logo_color"
+            android:drawableTop="@drawable/ic_baseline_account_circle_24"
+            android:background="#fff" />
+
+    </LinearLayout>
+
+</LinearLayout>

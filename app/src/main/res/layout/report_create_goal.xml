@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create new goal"
+                android:textColor="@color/text_color"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/etGoalName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Goal name"
+                android:inputType="text"
+                android:textColorHint="@color/text_color"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                android:background="@color/white"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/etTotalCalories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Total calories"
+                android:inputType="number"
+                android:textColorHint="@color/text_color"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                android:background="@color/white"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/etStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Start Date"
+                android:inputType="text"
+                android:textColorHint="@color/text_color"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                android:background="@color/white"
+                android:layout_marginBottom="15dp"/>
+
+
+            <EditText
+                android:id="@+id/etEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="End Date"
+                android:inputType="text"
+                android:textColorHint="@color/text_color"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                android:background="@color/white"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Finish"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:background="@drawable/button_success"
+                android:paddingVertical="8dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="15dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

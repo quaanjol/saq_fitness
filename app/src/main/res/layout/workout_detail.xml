@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:weightSum="10">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/exerciseImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_banner"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center_horizontal" />
+
+                <Button
+                    android:id="@+id/backBtn"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+                    android:drawableTint="@color/white"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingHorizontal="10dp"
+                    android:textSize="25sp"
+                    android:textColor="#fff"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="40dp">
+
+                    <TextView
+                        android:id="@+id/workoutName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chest and Triceps"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/workoutMusclePart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:text="CHEST"
+                            android:textColor="@color/black"
+                            android:background="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            android:layout_marginBottom="20dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/workoutCommentBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:text="144 comments"
+                            android:textColor="@color/white"
+                            android:drawableTint="@color/white"
+                            android:drawableLeft="@drawable/ic_baseline_mode_comment_24"
+                            android:textAllCaps="false"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:textSize="8sp"
+                            android:padding="5dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_hover"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="12dp">
+
+                <TextView
+                    android:id="@+id/workoutTotalSet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 sets"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="30dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvExerciseItemList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingHorizontal="15dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/startWorkoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start workout"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_primary"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

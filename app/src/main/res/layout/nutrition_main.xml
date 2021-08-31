@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="12"
+    android:background="@color/light_grey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nutrition information"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_color"
+                    android:padding="5dp"
+                    android:background="@drawable/table_border"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_color"
+                    android:padding="5dp"
+                    android:background="@drawable/table_border"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Serving"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_color"
+                    android:padding="5dp"
+                    android:background="@drawable/table_border"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Calo"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_color"
+                    android:padding="5dp"
+                    android:background="@drawable/table_border"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvNutritions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/homeBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Home"
+            android:textSize="10sp"
+            android:textColor="@color/text_color_2"
+            android:drawableTint="@color/text_color_2"
+            android:drawableTop="@drawable/ic_baseline_home_24"
+            android:background="#fff" />
+
+        <Button
+            android:id="@+id/trainingBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Workout"
+            android:textSize="10sp"
+            android:textColor="@color/text_color_2"
+            android:drawableTint="@color/text_color_2"
+            android:drawableTop="@drawable/ic_baseline_play_arrow_24"
+            android:background="#fff" />
+
+        <Button
+            android:id="@+id/nutritionBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Nutrition"
+            android:textSize="10sp"
+            android:textColor="@color/logo_color"
+            android:drawableTint="@color/logo_color"
+            android:drawableTop="@drawable/ic_baseline_fastfood_24"
+            android:background="#fff" />
+
+        <Button
+            android:id="@+id/reportBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Reports"
+            android:textSize="10sp"
+            android:textColor="@color/text_color_2"
+            android:drawableTint="@color/text_color_2"
+            android:drawableTop="@drawable/ic_baseline_bar_chart_24"
+            android:background="#fff" />
+
+        <Button
+            android:id="@+id/meBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Me"
+            android:textSize="10sp"
+            android:textColor="@color/text_color_2"
+            android:drawableTint="@color/text_color_2"
+            android:drawableTop="@drawable/ic_baseline_account_circle_24"
+            android:background="#fff" />
+
+    </LinearLayout>
+
+</LinearLayout>

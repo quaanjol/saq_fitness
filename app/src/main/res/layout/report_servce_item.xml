@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/serviceImg"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/workout_banner_2"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#70000000"/>
+
+        <TextView
+            android:id="@+id/serviceTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 month"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/button_primary"
+            android:paddingHorizontal="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="15dp"
+        android:background="@color/white"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/serviceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monthly payment"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="15dp"/>
+
+        <TextView
+            android:id="@+id/servicePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: $8 per month"
+            android:textColor="@color/text_color_2"
+            android:textSize="18sp"
+            android:layout_marginHorizontal="15dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

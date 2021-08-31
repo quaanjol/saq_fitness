@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="15dp"
+    android:background="@color/light_grey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create meal note"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/mealNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Number of meals you took"
+                android:inputType="number"
+                android:textColorHint="@color/text_color_2"
+                android:textColor="@color/text_color_2"
+                android:background="@color/white"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/mealDescription"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:hint="Note description"
+                android:inputType="text"
+                android:textColorHint="@color/text_color_2"
+                android:textColor="@color/text_color_2"
+                android:background="@color/white"
+                android:layout_marginBottom="15dp"
+                android:gravity="top"/>
+
+            <Button
+                android:id="@+id/addMealBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Add meals"
+                android:textColor="@color/white"
+                android:background="@drawable/button_primary"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

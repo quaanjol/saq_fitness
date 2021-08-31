@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@color/light_grey">
+
+    <TextView
+        android:id="@+id/mealCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meal note 1"
+        android:textSize="18sp"
+        android:textColor="@color/text_color"/>
+
+    <Spinner
+        android:id="@+id/spinnerNutrition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/nutritionGram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unit (gram)"
+        android:textColorHint="@color/text_color_2"
+        android:textColor="@color/text_color_2"
+        android:inputType="number"
+        android:padding="10dp"
+        android:background="@color/white"/>
+
+
+</LinearLayout>
